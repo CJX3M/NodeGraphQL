@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "runApi",
+			"problemMatcher": [],
+			"label": "npm: runApi",
+			"detail": "node ./api/server.js"
+		}
+	]
+}

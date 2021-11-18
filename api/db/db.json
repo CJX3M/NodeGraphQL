@@ -1,0 +1,56 @@
+{
+  "user": {
+    "id": "123asddas",
+    "username": "Carlos"
+  },
+  "pet": [
+    {
+      "id": "absdjdfl123",
+      "name": "Kelo",
+      "type": "DOG",
+      "breed": "Golden Retriever",
+      "owner": "123asddas",
+      "createdat": 1608837836000
+    },
+    {
+      "id": "absdjdfl123",
+      "name": "Hana",
+      "type": "DOG",
+      "breed": "Wolf",
+      "owner": "123asddas",
+      "createdat": 1578079436000
+    },
+    {
+      "id": "absdjdfl123",
+      "name": "Maya",
+      "type": "DOG",
+      "breed": "Golden Retriever",
+      "owner": "123asddas",
+      "createdat": 1578079436000
+    },
+    {
+      "id": "absdjdfl123",
+      "name": "Gordo",
+      "type": "DOG",
+      "breed": "Pug",
+      "owner": "123asddas",
+      "createdat": 1610493836000
+    },
+    {
+      "id": "absdjdfl123",
+      "name": "Miso",
+      "type": "CAT",
+      "breed": "N/A",
+      "owner": "123asddas",
+      "createdat": 1616502236000
+    },
+    {
+      "id": "absdjdfl123",
+      "name": "Alny",
+      "type": "CAT",
+      "breed": "N/A",
+      "owner": "123asddas",
+      "createdat": 1630671836000
+    }
+  ]
+}
