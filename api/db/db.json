@@ -51,6 +51,13 @@
       "breed": "N/A",
       "owner": "123asddas",
       "createdat": 1630671836000
+    },
+    {
+      "id": "yg5ykHChKDRGZ8QQQrWnp",
+      "createdat": 1637354202562,
+      "type": "DOG",
+      "name": "Lucky",
+      "breed": "German Shepar"
     }
   ]
 }

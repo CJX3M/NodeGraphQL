@@ -7,9 +7,12 @@ module.exports = {
             return models.Pet.findOne({ id })
         }
     },
-    // Mutation: {
-
-    // },
+    Mutation: {
+        addPet(_, { input }, { models }) {
+            const pet = models.Pet.create({ ...input });
+            return pet;
+        }
+    },
     Pet: {
     
     },
