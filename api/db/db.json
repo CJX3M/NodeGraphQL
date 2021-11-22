@@ -1,11 +1,11 @@
 {
-  "user": {
-    "id": "123asddas",
-    "username": "Carlos"
-  },
+  "user": [{
+      "id": "123asddas",
+      "username": "Carlos"
+  }],
   "pet": [
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl125",
       "name": "Kelo",
       "type": "DOG",
       "breed": "Golden Retriever",
@@ -13,7 +13,7 @@
       "createdat": 1608837836000
     },
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl120",
       "name": "Hana",
       "type": "DOG",
       "breed": "Wolf",
@@ -21,7 +21,7 @@
       "createdat": 1578079436000
     },
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl121",
       "name": "Maya",
       "type": "DOG",
       "breed": "Golden Retriever",
@@ -29,7 +29,7 @@
       "createdat": 1578079436000
     },
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl122",
       "name": "Gordo",
       "type": "DOG",
       "breed": "Pug",
@@ -37,7 +37,7 @@
       "createdat": 1610493836000
     },
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl124",
       "name": "Miso",
       "type": "CAT",
       "breed": "N/A",
@@ -45,7 +45,7 @@
       "createdat": 1616502236000
     },
     {
-      "id": "absdjdfl123",
+      "id": "absdjdfl126",
       "name": "Alny",
       "type": "CAT",
       "breed": "N/A",
@@ -57,14 +57,16 @@
       "createdat": 1637354202562,
       "type": "DOG",
       "name": "Lucky",
-      "breed": "German Shepar"
+      "breed": "German Shepar",
+      "owner": "123asddas"
     },
     {
       "id": "VwfJXOZie3ZyoFoaXfE4k",
       "createdat": 1637354877741,
       "type": "DOG",
       "name": "Seiz",
-      "breed": "Husky"
+      "breed": "Husky",
+      "owner": "123asddas"
     }
   ]
 }

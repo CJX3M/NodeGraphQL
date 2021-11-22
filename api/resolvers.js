@@ -1,6 +1,12 @@
 module.exports = {
     Query: {
-        pets(_, { input }, { models }, ) {
+        // users(_, { input }, { models }) {
+        //     return models.User.findMany(input)
+        // },
+        user(_, __, { models }) {
+          return models.User.findOne()
+        },
+        pets(_, { input }, { models } ) {
             return models.Pet.findMany(input)
         },
         pet(_, { id }, { models }) {
@@ -14,9 +20,13 @@ module.exports = {
         }
     },
     Pet: {
-    
+        owner(pet, _, { models }) {
+            return models.User.findOne({ id: pet.owner });
+        }
     },
     User: {
-
+        pets(user, _, { models }) {
+            return models.Pet.findMany({owner: user.id})
+        }
     }
 }
