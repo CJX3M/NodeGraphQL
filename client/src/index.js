@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import client from './client'
 
-const Root = () => {
+const Root = () => (
   <BrowserRouter>
     <React.StrictMode>
       <ApolloProvider client={client}>
@@ -15,7 +15,7 @@ const Root = () => {
       </ApolloProvider>
     </React.StrictMode>
   </BrowserRouter>
-}
+)
 
 ReactDOM.render(<Root />,  document.getElementById('root'));
 
