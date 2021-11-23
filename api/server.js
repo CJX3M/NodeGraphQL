@@ -17,8 +17,10 @@ const { models, db } = require('./db');
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context() {
+    context({req}) {
+        //const isAuth = req.headers.authorization;
         const user = db.get('user').value();
+        if (!user) throw new Error('not auth');
         return { models, db, user };
     }
 })
