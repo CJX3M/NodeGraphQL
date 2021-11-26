@@ -21,8 +21,7 @@ const NEW_PET = gql`
         addPet(input: $input) {
             id
             type
-            name
-            img
+            name            
         }
     }
 `;
@@ -43,7 +42,9 @@ export default function Pets() {
     const onSubmit = input => {
 
         setModal(false);
-        newPet({ variables: { input } })
+        newPet({
+            variables: { input }
+        });
     }
 
     return (
