@@ -17,12 +17,20 @@ const ALL_PETS = gql`
 `;
 
 const NEW_PET = gql`
-
+    mutation createPet($input: NewPetInput!) {
+        addPet(input: $input) {
+            id
+            type
+            name
+            img
+        }
+    }
 `;
 
 export default function Pets() {
     const [modal, setModal] = useState(false);
     const { data, loading, error } = useQuery(ALL_PETS)
+    const [newPet, pet] = useMutation(NEW_PET);
     
     if (loading) {
         return <Loader/>
@@ -33,29 +41,30 @@ export default function Pets() {
     }
 
     const onSubmit = input => {
-        setModal(false);
-    }
 
-    if (modal) {
-        return <NewPetModal onSubmit={onSubmit} onCancel={() => setModal(false)} />
+        setModal(false);
+        newPet({ variables: { input } })
     }
 
     return (
-        <div className = "page pets-page">
-            <section>
-                <div className="row betwee-xs middle-xs">
-                    <div className="row-xs-10">
-                        <h1>Pets</h1>
-                    </div>
+        <div>
+            <NewPetModal onSubmit={onSubmit} onCancel={() => setModal(false)} show={modal} />
+            <div className = "page pets-page">
+                <section>
+                    <div className="row betwee-xs middle-xs">
+                        <div className="row-xs-10">
+                            <h1>Pets</h1>
+                        </div>
 
-                    <div className="col-xs-2">
-                        <button onClick={() => setModal(true)}>New pet</button>
+                        <div className="col-xs-2">
+                            <button onClick={() => setModal(true)}>New pet</button>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <PetList pets={data.pets} />
-            </section>
+                </section>
+                <section>
+                    <PetList pets={data.pets} />
+                </section>
+            </div>
         </div>
     )
 }
