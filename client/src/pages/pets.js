@@ -5,26 +5,29 @@ import PetList from '../components/PetList';
 import NewPetModal from '../components/modals/NewPetModal';
 import Loader from '../components/loader'
 
+const PETS_FIELDS = gql`
+    fragment PetsFields on Pet {
+        id
+        name
+        breed
+        type
+    }    
+`;
+
 const ALL_PETS = gql`
     {
-        pets {
-            id
-            name
-            breed
-            type            
-        }
+        pets {...PetsFields}
     }
+    ${PETS_FIELDS}
 `;
 
 const NEW_PET = gql`
     mutation createPet($input: NewPetInput!) {
-        addPet(input: $input) {
-            id
-            type
-            name            
-        }
+        addPet(input: $input) {...PetsFields}
     }
+    ${PETS_FIELDS}
 `;
+
 
 export default function Pets() {
     const [modal, setModal] = useState(false);
