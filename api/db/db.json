@@ -1,72 +1,10 @@
 {
-  "user": [{
+  "user": [
+    {
       "id": "123asddas",
       "username": "Carlos"
-  }],
-  "pet": [
-    {
-      "id": "absdjdfl125",
-      "name": "Kelo",
-      "type": "DOG",
-      "breed": "Golden Retriever",
-      "owner": "123asddas",
-      "createdat": 1608837836000
-    },
-    {
-      "id": "absdjdfl120",
-      "name": "Hana",
-      "type": "DOG",
-      "breed": "Wolf",
-      "owner": "123asddas",
-      "createdat": 1578079436000
-    },
-    {
-      "id": "absdjdfl121",
-      "name": "Maya",
-      "type": "DOG",
-      "breed": "Golden Retriever",
-      "owner": "123asddas",
-      "createdat": 1578079436000
-    },
-    {
-      "id": "absdjdfl122",
-      "name": "Gordo",
-      "type": "DOG",
-      "breed": "Pug",
-      "owner": "123asddas",
-      "createdat": 1610493836000
-    },
-    {
-      "id": "absdjdfl124",
-      "name": "Miso",
-      "type": "CAT",
-      "breed": "N/A",
-      "owner": "123asddas",
-      "createdat": 1616502236000
-    },
-    {
-      "id": "absdjdfl126",
-      "name": "Alny",
-      "type": "CAT",
-      "breed": "N/A",
-      "owner": "123asddas",
-      "createdat": 1630671836000
-    },
-    {
-      "id": "yg5ykHChKDRGZ8QQQrWnp",
-      "createdat": 1637354202562,
-      "type": "DOG",
-      "name": "Lucky",
-      "breed": "German Shepar",
-      "owner": "123asddas"
-    },
-    {
-      "id": "VwfJXOZie3ZyoFoaXfE4k",
-      "createdat": 1637354877741,
-      "type": "DOG",
-      "name": "Seiz",
-      "breed": "Husky",
-      "owner": "123asddas"
     }
+  ],
+  "pet": [    
   ]
 }
