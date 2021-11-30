@@ -5,6 +5,27 @@
       "username": "Carlos"
     }
   ],
-  "pet": [    
+  "pet": [
+    {
+      "id": "XnNto-5xvSUdX0PGb4I_k",
+      "createdat": 1638299954957,
+      "type": "DOG",
+      "name": "Kekelo",
+      "breed": "Golden Retriever"
+    },
+    {
+      "id": "qi3GBAJGg94BFSwWslthr",
+      "createdat": 1638299961208,
+      "type": "DOG",
+      "name": "Wero",
+      "breed": "Callejero"
+    },
+    {
+      "id": "bM7L3_dY4nyC_Sq_KT19d",
+      "createdat": 1638299974529,
+      "type": "CAT",
+      "name": "Audrey",
+      "breed": "Egiptian"
+    }
   ]
 }
